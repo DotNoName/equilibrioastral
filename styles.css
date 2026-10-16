@@ -1,0 +1,163 @@
+/* ==========================================================================
+   EQUILIBRIO ASTRAL (equilibrioastral.com)
+   Estética Boho Ancestral, Minimalista y Limpia (Sin clichés oscuros/bruja)
+   Colores: Lino, Terracota suave, Arena dorada, Salvia y Marfil cálido
+   ========================================================================== */
+
+:root {
+  --color-sand-deep: #14120f;
+  --color-sand-dark: #191612;
+  --color-sand-card: rgba(30, 26, 21, 0.85);
+  --color-sand-border: rgba(223, 186, 130, 0.2);
+  
+  --color-terracotta: #c97a56;
+  --color-terracotta-light: #e09472;
+  --color-clay: #a65d3d;
+  
+  --color-gold-sand: #dfba82;
+  --color-gold-champagne: #edd4aa;
+  --color-gold-warm: #c59f63;
+  
+  --color-sage: #8ea391;
+  --color-sage-light: #a9bfa9;
+  
+  --color-ivory: #faf7f2;
+  --color-linen: #eae3d7;
+  --color-muted: #b8aba0;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-sand-deep);
+  color: var(--color-ivory);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+  background-color: var(--color-sand-deep);
+  min-height: 100vh;
+}
+
+/* Tipografías Editoriales */
+.font-serif { font-family: var(--font-serif); }
+.font-sans { font-family: var(--font-sans); }
+
+/* Fondos y Superficies Boho */
+.bg-boho-dark { background-color: var(--color-sand-deep); }
+.bg-boho-card { 
+  background-color: var(--color-sand-card); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-sand-border);
+}
+.bg-boho-subtle { background-color: rgba(45, 38, 30, 0.5); }
+
+/* Textos */
+.text-ivory { color: var(--color-ivory); }
+.text-linen { color: var(--color-linen); }
+.text-muted { color: var(--color-muted); }
+.text-gold-sand { color: var(--color-gold-sand); }
+.text-gold-champagne { color: var(--color-gold-champagne); }
+.text-terracotta { color: var(--color-terracotta); }
+.text-sage { color: var(--color-sage); }
+
+/* Borde y Efectos */
+.border-boho { border-color: var(--color-sand-border); }
+.border-terracotta { border-color: rgba(201, 122, 86, 0.3); }
+
+.shadow-boho {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px rgba(223, 186, 130, 0.1);
+}
+
+.shadow-glow-warm {
+  box-shadow: 0 0 25px rgba(223, 186, 130, 0.25);
+}
+
+/* Botones Boho */
+.btn-boho-primary {
+  background: linear-gradient(135deg, #dfba82 0%, #c97a56 100%);
+  color: #14120f;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(201, 122, 86, 0.25);
+}
+.btn-boho-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(223, 186, 130, 0.35);
+  background: linear-gradient(135deg, #edd4aa 0%, #d68763 100%);
+}
+
+.btn-boho-secondary {
+  background: rgba(223, 186, 130, 0.1);
+  border: 1px solid rgba(223, 186, 130, 0.3);
+  color: var(--color-ivory);
+  transition: all 0.25s ease;
+}
+.btn-boho-secondary:hover {
+  background: rgba(223, 186, 130, 0.2);
+  border-color: var(--color-gold-sand);
+  color: var(--color-gold-champagne);
+}
+
+/* Formas Arquitectónicas Boho (Arcos suaves y marcos) */
+.boho-arch {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.boho-arch-sm {
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+/* Animaciones suaves */
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.35; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #14120f;
+}
+::-webkit-scrollbar-thumb {
+  background: #383025;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #504434;
+}
+
+/* Modal styling */
+.modal-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
