@@ -1,0 +1,7 @@
+# Servir index.html prioritariamente sobre index.php (WordPress)
+DirectoryIndex index.html index.php
+
+# Opciones de seguridad y caché
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+</IfModule>
