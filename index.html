@@ -694,12 +694,25 @@
         <div class="w-14 h-14 rounded-full bg-sage-light text-sage-dark mx-auto flex items-center justify-center text-2xl mb-4">
           ✓
         </div>
-        <h3 class="font-serif text-2xl text-text-dark mb-2">¡Ficha Enviada!</h3>
+        <h3 class="font-serif text-3xl text-text-dark mb-2">¡Acceso Concedido!</h3>
         <p class="text-xs text-text-body leading-relaxed mb-6 font-light">
-          Hemos registrado tu perfil de hábitos. Enviamos el acceso a <strong id="user-confirmed-email" class="text-sage-dark"></strong>.
+          Hola <strong id="user-confirmed-name" class="text-text-dark font-medium">amigo</strong>, hemos registrado tu perfil para <strong id="user-confirmed-email" class="text-sage-dark"></strong>. Aquí tienes tus recursos gratuitos listos para consultar o guardar:
         </p>
-        <button onclick="closeLeadModal()" class="btn-wellness-secondary px-6 py-2.5 text-xs uppercase tracking-wider">
-          Cerrar
+
+        <!-- Botones de Entrega Inmediata -->
+        <div class="space-y-3 mb-6 text-left">
+          <a href="revista-codice-vol1.html" target="_blank" class="w-full btn-wellness-primary py-3 px-5 text-xs uppercase tracking-wider font-semibold flex items-center justify-between">
+            <span>📖 Abrir Revista Códice (Vol. I)</span>
+            <span>➔</span>
+          </a>
+          <button onclick="window.print()" class="w-full btn-wellness-secondary py-3 px-5 text-xs uppercase tracking-wider font-semibold flex items-center justify-between">
+            <span>🖨️ Guardar Mi Ficha de Perfil en PDF</span>
+            <span>PDF</span>
+          </button>
+        </div>
+
+        <button onclick="closeLeadModal()" class="text-xs text-text-subtle hover:text-text-dark underline">
+          Volver a la página
         </button>
       </div>
 

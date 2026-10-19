@@ -561,18 +561,32 @@ function closeLeadModal() {
 }
 
 function handleLeadCapture() {
-  const name = document.getElementById('lead-name').value.trim();
-  const email = document.getElementById('lead-email').value.trim();
+  const nameInput = document.getElementById('lead-name');
+  const emailInput = document.getElementById('lead-email');
+  const name = nameInput ? nameInput.value.trim() : '';
+  const email = emailInput ? emailInput.value.trim() : '';
 
   if (!email || !name) return;
 
-  const subscribers = JSON.parse(localStorage.getItem('equilibrio_subscribers') || '[]');
-  subscribers.push({
+  const leadData = {
     name,
     email,
-    nahual: lastCalculatedData ? lastCalculatedData.nahual.kiche : 'Desconocido',
+    nahual: lastCalculatedData ? lastCalculatedData.nahual.kiche : 'Visitante',
     date: new Date().toISOString()
-  });
+  };
+
+  // 1. Guardar en el servidor (Hostinger CSV)
+  try {
+    fetch('guardar_lead.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(leadData)
+    }).catch(err => console.log('Offline/Local lead saved'));
+  } catch (e) {}
+
+  // 2. Guardar en localStorage de respaldo
+  const subscribers = JSON.parse(localStorage.getItem('equilibrio_subscribers') || '[]');
+  subscribers.push(leadData);
   localStorage.setItem('equilibrio_subscribers', JSON.stringify(subscribers));
 
   const formBox = document.getElementById('lead-form-box');
@@ -581,6 +595,12 @@ function handleLeadCapture() {
   if (formBox && successBox) {
     formBox.classList.add('hidden');
     successBox.classList.remove('hidden');
-    document.getElementById('user-confirmed-email').textContent = email;
+    
+    const userEmailSpan = document.getElementById('user-confirmed-email');
+    if (userEmailSpan) userEmailSpan.textContent = email;
+
+    const userNameSpan = document.getElementById('user-confirmed-name');
+    if (userNameSpan) userNameSpan.textContent = name;
   }
 }
+
