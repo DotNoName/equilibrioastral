@@ -520,29 +520,30 @@ function handleCalculation() {
 function renderResultsCard(data) {
   const { nahual, tone, dateString } = data;
 
-  document.getElementById('res-date-label').textContent = dateString;
-  document.getElementById('res-nahual-kiche').textContent = nahual.kiche;
-  document.getElementById('res-nahual-maya').textContent = `Tzolk'in: ${nahual.maya} • Mexica: ${nahual.mexica}`;
-  document.getElementById('res-traduccion').textContent = `"${nahual.traduccion}"`;
-  document.getElementById('res-tone-name').textContent = `Tono ${tone.tone} (${tone.name})`;
-  document.getElementById('res-tone-desc').textContent = `${tone.keyword}: ${tone.desc}`;
+  const setElText = (id, text) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  };
+
+  setElText('res-date-label', dateString);
+  setElText('res-nahual-kiche', nahual.kiche);
+  setElText('res-nahual-maya', `Tzolk'in: ${nahual.maya} • Mexica: ${nahual.mexica}`);
+  setElText('res-traduccion', `"${nahual.traduccion}"`);
+  setElText('res-tone-name', `Tono ${tone.tone} (${tone.name})`);
+  setElText('res-tone-desc', `${tone.keyword}: ${tone.desc}`);
 
   const glyphContainer = document.getElementById('res-glyph-container');
   if (glyphContainer) {
     glyphContainer.innerHTML = nahual.svgGlyph;
   }
 
-  const badge = document.getElementById('res-glyph-badge');
-  if (badge) {
-    badge.textContent = `Cartucho Arqueológico: ${nahual.maya}`;
-  }
+  setElText('res-glyph-badge', `Cartucho Arqueológico: ${nahual.maya}`);
+  setElText('res-rumbo', nahual.rumbo);
+  setElText('res-totem', nahual.totem);
 
-  document.getElementById('res-rumbo').textContent = nahual.rumbo;
-  document.getElementById('res-totem').textContent = nahual.totem;
-
-  document.getElementById('res-habito-titulo').textContent = nahual.habitoConductual;
-  document.getElementById('res-habito-desc').textContent = nahual.conductaExplicacion;
-  document.getElementById('res-salud-consejo').textContent = nahual.saludConsejo;
+  setElText('res-habito-titulo', nahual.habitoConductual);
+  setElText('res-habito-desc', nahual.conductaExplicacion);
+  setElText('res-salud-consejo', nahual.saludConsejo);
 }
 
 function openLeadModal() {
