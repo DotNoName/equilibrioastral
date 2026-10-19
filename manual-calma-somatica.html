@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Calma Somática • Equilibrio Astral</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'wellness-bg': '#fbf9f5',
+            'wellness-surface': '#f4efe8',
+            'wellness-card': '#ffffff',
+            'sage-dark': '#485648',
+            'sage-accent': '#6c7e6c',
+            'sage-light': '#e8ede7',
+            'terracotta-accent': '#c27653',
+            'terracotta-light': '#f5eae4',
+            'text-dark': '#23201d',
+            'text-body': '#524c46',
+            'text-subtle': '#877f76',
+            'border-light': '#e6dfd5',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { background-color: #ffffff !important; color: #111111 !important; }
+      .page-break { page-break-before: always; }
+      .avoid-break { page-break-inside: avoid; }
+      header.book-header { position: static !important; }
+    }
+  </style>
+</head>
+<body class="bg-wellness-bg text-text-dark font-sans selection:bg-sage-light selection:text-sage-dark antialiased">
+
+  <!-- Barra Superior de Navegación y Acción de Imprimir / Guardar -->
+  <header class="no-print sticky top-0 z-50 bg-wellness-bg/95 backdrop-blur-md border-b border-border-light py-4 px-6">
+    <div class="max-w-4xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="descarga.html" class="text-xs uppercase tracking-wider text-text-subtle hover:text-text-dark">
+          ← Volver a Descargas
+        </a>
+        <span class="text-border-light">|</span>
+        <span class="font-serif text-lg font-medium text-text-dark">Manual de Calma Somática</span>
+      </div>
+      <button onclick="window.print()" class="bg-sage-dark hover:bg-sage-accent text-white px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-colors shadow-sm flex items-center gap-2">
+        <span>🖨️ Guardar en PDF / Imprimir</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO DEL MANUAL (EDITORIAL) -->
+  <main class="max-w-3xl mx-auto px-6 py-12 sm:py-20">
+
+    <!-- PORTADA DEL MANUAL -->
+    <section class="min-h-[85vh] flex flex-col justify-between py-12 border-b-2 border-border-light text-center page-break">
+      <div class="pt-8">
+        <div class="w-16 h-16 rounded-full bg-sage-light text-sage-dark mx-auto flex items-center justify-center text-2xl mb-6 border border-sage-accent/30">
+          🌱
+        </div>
+        <span class="text-xs uppercase tracking-[0.25em] text-sage-dark font-semibold block mb-4">
+          Colección Biología del Ritmo • Volumen Práctico
+        </span>
+        <h1 class="font-serif text-5xl sm:text-6xl text-text-dark font-normal leading-tight max-w-xl mx-auto">
+          Manual de Calma Somática
+        </h1>
+        <p class="font-serif italic text-2xl sm:text-3xl text-terracotta-accent mt-4">
+          15 Protocolos para el Tono Vagal y la Desactivación del Estrés
+        </p>
+      </div>
+
+      <div class="my-12 p-8 rounded-3xl bg-wellness-surface border border-border-light max-w-lg mx-auto text-left shadow-sm">
+        <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed">
+          Este manual compila herramientas somatosensoriales y de modificación de conducta basadas en neurobiología aplicada. No requiere experiencia previa ni instrumental clínico: tu propio cuerpo y tu respiración son el regulador biológico.
+        </p>
+      </div>
+
+      <div class="border-t border-border-light pt-6 text-xs text-text-subtle uppercase tracking-widest">
+        <span>Equilibrio Astral • Guía Oficial para Descarga Digital</span>
+      </div>
+    </section>
+
+    <!-- INTRODUCCIÓN CIENTÍFICA & PRÁCTICA -->
+    <section class="py-12 border-b border-border-light page-break">
+      <span class="text-xs uppercase tracking-widest text-sage-dark font-semibold block mb-2">Fundamento</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-text-dark font-medium mb-6">
+        El Freno Vagal y la Respuesta Somática
+      </h2>
+      
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed mb-4">
+        Cuando experimentamos angustia, sobrecarga cognitiva o irritabilidad, nuestra corteza cerebral (el pensamiento racional) es secuestrada por el sistema nervioso simpático: el pulso se acelera, la respiración se vuelve superficial y los músculos del cuello y mandíbula se tensan en anticipación de una amenaza que rara vez es física.
+      </p>
+
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed mb-6">
+        Intentar "calmar la mente pensando" rara vez funciona cuando la química corporal está en alerta. El enfoque somático opera en sentido inverso: <strong>utiliza señales mecánicas corporales (movimiento del diafragma, temperatura facial, presión propioceptiva)</strong> para enviar al tronco encefálico la señal irrefutable de que el peligro ha cesado.
+      </p>
+
+      <div class="p-6 bg-sage-light/60 rounded-2xl border border-sage-accent/20">
+        <h3 class="font-serif text-xl text-sage-dark font-medium mb-2">✦ La Regla de los 3 Minutos</h3>
+        <p class="text-xs sm:text-sm text-text-body leading-relaxed">
+          No necesitas meditar durante horas en una postura incómoda. La mayoría de estas 15 técnicas ejercen su pico de respuesta inhibitoria parasimpática entre los 90 segundos y los 4 minutos. Selecciona 1 técnica según el momento del día.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN I: DESACTIVACIÓN INMEDIATA (AGUDA) -->
+    <section class="py-12 border-b border-border-light page-break">
+      <div class="mb-10">
+        <span class="text-xs uppercase tracking-widest text-terracotta-accent font-semibold block mb-1">Módulo I</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-text-dark font-medium">
+          Protocolos de Desactivación Inmediata
+        </h2>
+        <p class="text-xs sm:text-sm text-text-subtle font-light mt-1">
+          Para momentos de taquicardia, opresión en el pecho, enojo súbito o rumiación mental.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Técnica 01 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">01 • Fisiología Respiratoria</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">90 Segundos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">El Suspiro Fisiológico (Physiological Sigh)</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Documentado por neurobiólogos de Stanford, es el método más rápido conocido para reabrir los alvéolos colapsados por el estrés y eliminar el exceso de dióxido de carbono en sangre.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-dark space-y-1.5 border border-border-light">
+            <p><strong>Paso 1:</strong> Inhala profundamente por la nariz durante 2 segundos.</p>
+            <p><strong>Paso 2:</strong> Sin exhalar, realiza una segunda inhalación corta por la nariz para llenar al máximo los pulmones.</p>
+            <p><strong>Paso 3:</strong> Exhala de forma lenta, continua y suave por la boca durante 6 a 8 segundos.</p>
+            <p><strong>Frecuencia:</strong> Repite únicamente de 2 a 3 veces consecutivas. Sentirás un descenso inmediato en las pulsaciones.</p>
+          </div>
+        </div>
+
+        <!-- Técnica 02 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">02 • Enfriamiento Trigeminal</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">30 Segundos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">El Reflejo de Inmersión Mamífero</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Al estimular los receptores de frío situados alrededor de los ojos y los pómulos (inervados por el nervio trigémino), el corazón frena mecánicamente sus latidos a través de una descarga vagal primaria.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-dark space-y-1.5 border border-border-light">
+            <p><strong>Paso 1:</strong> Llena un cuenco con agua muy fría o toma una compresa helada.</p>
+            <p><strong>Paso 2:</strong> Inclínate y sumerge tu rostro (o presiona la compresa fría sobre ojos y mejillas) conteniendo la respiración durante 15 a 20 segundos.</p>
+            <p><strong>Efecto:</strong> Provoca una bradicardia fisiológica controlada instantánea.</p>
+          </div>
+        </div>
+
+        <!-- Técnica 03 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">03 • Neuroanatomía del Oído</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">2 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">Compresión del Trago y Fosa Auricular</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            La rama auricular del nervio vago (nervio de Arnold) es la única superficie dérmica donde el nervio vago sale directamente hacia el exterior sin pasar por órganos internos.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-dark space-y-1.5 border border-border-light">
+            <p><strong>Paso 1:</strong> Coloca el dedo índice en la cavidad curva interna de la oreja (la concha auricular, justo detrás del cartílago).</p>
+            <p><strong>Paso 2:</strong> Realiza círculos muy suaves y lentos en el sentido de las agujas del reloj con una respiración profunda.</p>
+            <p><strong>Señal de éxito:</strong> Tragar saliva involuntariamente o bostezar (signos claros de activación vagal).</p>
+          </div>
+        </div>
+
+        <!-- Técnica 04 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">04 • Propiocepción & Espacio</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">3 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">Anclaje Somatosensorial 5-4-3-2-1</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Desplaza la actividad neural de los circuitos de la amígdala (miedo/angustia) hacia la corteza sensorial primaria al forzar al cerebro a enumerar sensaciones físicas reales del entorno inmediato.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-dark space-y-1.5 border border-border-light">
+            <p>✦ <strong>5 cosas que ves:</strong> Nota su color exacto y textura.</p>
+            <p>✦ <strong>4 cosas que tocas:</strong> La tela de tu pantalón, la superficie de la mesa, la suela de tus zapatos.</p>
+            <p>✦ <strong>3 sonidos que escuchas:</strong> El viento exterior, un zumbido eléctrico lejano, tu propia respiración.</p>
+            <p>✦ <strong>2 olores presentes:</strong> El café matutino, la madera, el aire fresco.</p>
+            <p>✦ <strong>1 sabor en tu boca:</strong> El regusto de agua fresca o de un té natural.</p>
+          </div>
+        </div>
+
+        <!-- Técnica 05 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">05 • Ritmo Cardíaco Controlado</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">4 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">Respiración de Caja Cuadrada (4-4-4-4)</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Utilizada por unidades de alta demanda operativa para restablecer el enfoque ejecutivo bajo presión sin perder la agudeza mental.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-dark space-y-1.5 border border-border-light">
+            <p><strong>1.</strong> Inhala en 4 tiempos.</p>
+            <p><strong>2.</strong> Retén el aire a pulmón lleno en 4 tiempos.</p>
+            <p><strong>3.</strong> Exhala suavemente en 4 tiempos.</p>
+            <p><strong>4.</strong> Retén el vacío a pulmón vacío en 4 tiempos.</p>
+            <p><strong>Ciclo:</strong> Repetir durante 4 a 6 ciclos continuos.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN II: RITMOS CIRCADIANOS & LUZ -->
+    <section class="py-12 border-b border-border-light page-break">
+      <div class="mb-10">
+        <span class="text-xs uppercase tracking-widest text-sage-dark font-semibold block mb-1">Módulo II</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-text-dark font-medium">
+          Sincronización Circadiana & Hábitos Matutinos
+        </h2>
+        <p class="text-xs sm:text-sm text-text-subtle font-light mt-1">
+          La regulación emocional depende directamente del reloj biológico maestro (núcleo supraquiasmático).
+        </p>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Técnica 06 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">06 • Fotobiología</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">10-15 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">Exposición a la Luz Matutina (Ritual del Este)</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Mirar hacia el cielo abierto (sin mirar directo al disco solar) dentro de los primeros 45 minutos tras despertar activa las células ganglionares retinianas intrínsecamente fotosensibles (ipRGCs).
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-body space-y-1 border border-border-light">
+            <p>✦ Dispara el pulso matutino saludable de cortisol para despertar la energía sin ansiedad.</p>
+            <p>✦ Inicia un temporizador biológico interno de ~14 horas que desencadenará la liberación natural de melatonina por la noche.</p>
+          </div>
+        </div>
+
+        <!-- Técnica 07 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">07 • Bioquímica Matutina</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">1 Minuto</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">Hidratación Mineral de Arranque</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Durante 7-8 horas de sueño perdemos cerca de 500 ml de agua por respiración y transpiración. La deshidratación leve eleva la concentración plasmática de vasopresina, imitando los síntomas del estrés agudo.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-body border border-border-light">
+            <p><strong>Fórmula:</strong> 350 ml de agua a temperatura ambiente con una pizca mínima de sal marina no refinada y unas gotas de limón antes de probar café o té.</p>
+          </div>
+        </div>
+
+        <!-- Técnica 08 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">08 • Biomecánica Postural</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">2 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">Desactivación del Reflejo de Sobresalto</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            La postura encorvada frente a pantallas reproduce la postura biológica de defensa ante un depredador (hombros adelantados, cuello retraído). Revertir esta señal física modifica la neuroquímica cerebral.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-body space-y-1 border border-border-light">
+            <p>✦ Lleva los codos hacia atrás formando una "W" con los brazos.</p>
+            <p>✦ Abre el esternón hacia arriba, mira levemente sobre la línea del horizonte e inhala profundamente abriendo las costillas inferiores.</p>
+          </div>
+        </div>
+
+        <!-- Técnica 09 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">09 • Psicología de Micro-Pausas</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">Cada 90 Min</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">El Ciclo Ultradiano de Trabajo y Descompresión</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            El cerebro humano opera en oscilaciones ultradianas de 90 a 110 minutos. Forzarse a trabajar 4 horas seguidas colapsa la atención y eleva la irritabilidad.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-body border border-border-light">
+            <p><strong>Pauta:</strong> Tras 90 minutos de esfuerzo mental, realiza una pausa somática de 5 minutos: levántate, mira un punto a más de 6 metros de distancia y mueve suavemente los tobillos y la pelvis.</p>
+          </div>
+        </div>
+
+        <!-- Técnica 10 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">10 • Anclaje Ritual Ancestral</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">2 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">La Orientación a los 4 Rumbos</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Tomada de las tradiciones mesoamericanas y reinterpretada desde la psicología de la orientación espacial y la propiocepción.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-body space-y-1 border border-border-light">
+            <p>✦ <strong>Este (Rojo):</strong> Enfoca tu intención matutina: ¿Qué energía quiero proyectar hoy?</p>
+            <p>✦ <strong>Oeste (Negro):</strong> Reconoce lo que debes soltar: ¿Qué carga innecesaria dejo atrás?</p>
+            <p>✦ <strong>Norte (Blanco):</strong> Sabiduría e introspección: ¿Qué aprendí del día de ayer?</p>
+            <p>✦ <strong>Sur (Amarillo):</strong> Raíz física y vitalidad: Siente el apoyo del suelo bajo tus pies descalzos.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN III: RESTAURACIÓN NOCTURNA Y SUEÑO -->
+    <section class="py-12 page-break">
+      <div class="mb-10">
+        <span class="text-xs uppercase tracking-widest text-terracotta-accent font-semibold block mb-1">Módulo III</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-text-dark font-medium">
+          Arquitectura del Sueño y Restauración Nocturna
+        </h2>
+        <p class="text-xs sm:text-sm text-text-subtle font-light mt-1">
+          El sueño profundo es el único mecanismo biológico donde el cerebro drena toxinas mediante el sistema glinfático.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Técnica 11 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">11 • Termorregulación</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">15 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">La Ducha Caliente Inversa</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Para conciliar el sueño profundo, la temperatura corporal central debe descender aproximadamente 1°C. Un baño caliente 60-90 minutos antes de dormir dilata los vasos sanguíneos periféricos (manos y pies), expulsando calor interno con rapidez al salir de la ducha.
+          </p>
+        </div>
+
+        <!-- Técnica 12 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">12 • Vaciado Cognitivo</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">5 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">El "Brain Dump" Nocturno en Papel</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            El efecto Zeigarnik hace que el cerebro mantenga activos los bucles de tareas pendientes. Escribir a mano en una libreta de papel las 3 prioridades del día siguiente reduce el insomnio de inicio en más del 30% según estudios clínicos.
+          </p>
+        </div>
+
+        <!-- Técnica 13 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">13 • Relajación Muscular</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">5 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">Protocolo Abreviado de Jacobson</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Contrae deliberadamente un grupo muscular durante 5 segundos y suelta de golpe durante 15 segundos. Inicia por los pies, pantorrillas, glúteos, abdomen, hombros y finalmente mandíbula. El contraste muscular le enseña al cerebro a soltar el tono basal rígido.
+          </p>
+        </div>
+
+        <!-- Técnica 14 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">14 • Atenuación Visual</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">2 Horas antes</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">El Ocaso Lumínico (Luces Bajas y Cálidas)</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            La luz artificial blanca proveniente del techo simula el sol del mediodía e inhibe por completo la síntesis de melatonina. Apaga luces superiores a partir de las 8:30 pm y utiliza lámparas de pie cálidas o velas.
+          </p>
+        </div>
+
+        <!-- Técnica 15 -->
+        <div class="avoid-break p-6 sm:p-8 bg-wellness-surface rounded-2xl border border-border-light">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-sage-dark">15 • Respiración Hipnótica</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-wellness-bg border border-border-light">3 Minutos</span>
+          </div>
+          <h3 class="font-serif text-2xl text-text-dark font-medium mb-2">El Ritmo 4-7-8 del Dr. Andrew Weil</h3>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed mb-4">
+            Alargar la exhalación casi al doble del tiempo de la inhalación estimula intensamente el nódulo sinoauricular a través del nervio vago, bajando el ritmo cardíaco para inducir la transición a ondas cerebrales alfa y theta.
+          </p>
+          <div class="bg-wellness-bg p-4 rounded-xl text-xs text-text-dark space-y-1.5 border border-border-light">
+            <p>✦ Inhala por la nariz silenciosamente en <strong>4 segundos</strong>.</p>
+            <p>✦ Retén el aire durante <strong>7 segundos</strong>.</p>
+            <p>✦ Exhala por la boca haciendo un suave sonido de brisa durante <strong>8 segundos</strong>.</p>
+            <p>✦ Realiza 4 ciclos consecutivos acostado en cama antes de cerrar los ojos.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTRAPORTADA Y CRÉDITOS -->
+    <section class="py-12 border-t-2 border-border-light text-center page-break">
+      <div class="w-12 h-12 rounded-full bg-sage-light text-sage-dark mx-auto flex items-center justify-center text-xl mb-4">
+        ✨
+      </div>
+      <h3 class="font-serif text-2xl text-text-dark mb-2">Equilibrio Astral</h3>
+      <p class="text-xs text-text-body max-w-md mx-auto leading-relaxed mb-6 font-light">
+        La calma no es la ausencia de retos en el mundo exterior, sino la capacidad biológica y conductual de volver a tu centro cuando la tormenta arrecia.
+      </p>
+      <div class="text-[11px] text-text-subtle font-mono">
+        Edición Digital I • © 2026 equilibrioastral.com • Todos los derechos reservados.
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

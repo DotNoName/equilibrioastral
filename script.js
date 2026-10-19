@@ -469,8 +469,6 @@ document.addEventListener('DOMContentLoaded', () => {
       handleLeadCapture();
     });
   }
-
-  setupAudioEngine();
 });
 
 function populateDateSelectors() {
@@ -585,76 +583,4 @@ function handleLeadCapture() {
     successBox.classList.remove('hidden');
     document.getElementById('user-confirmed-email').textContent = email;
   }
-}
-
-// Sonido de Fondo Armónico en Vivo (432 Hz)
-let audioCtx = null;
-let isAudioPlaying = false;
-let osc1 = null;
-let osc2 = null;
-let gainNode = null;
-
-function setupAudioEngine() {
-  const audioBtn = document.getElementById('toggle-soundscape-btn');
-  const audioStatus = document.getElementById('soundscape-status');
-
-  if (!audioBtn) return;
-
-  audioBtn.addEventListener('click', () => {
-    if (!audioCtx) {
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
-      audioCtx = new AudioContext();
-    }
-
-    if (audioCtx.state === 'suspended') {
-      audioCtx.resume();
-    }
-
-    if (!isAudioPlaying) {
-      startSoundscape();
-      isAudioPlaying = true;
-      if (audioStatus) audioStatus.textContent = "Frecuencia activa (432 Hz)";
-      if (audioBtn) audioBtn.classList.add('bg-sage-dark');
-    } else {
-      stopSoundscape();
-      isAudioPlaying = false;
-      if (audioStatus) audioStatus.textContent = "Escuchar audio de calma (432 Hz)";
-      if (audioBtn) audioBtn.classList.remove('bg-sage-dark');
-    }
-  });
-}
-
-function startSoundscape() {
-  if (!audioCtx) return;
-
-  gainNode = audioCtx.createGain();
-  gainNode.gain.setValueAtTime(0.01, audioCtx.currentTime);
-  gainNode.gain.exponentialRampToValueAtTime(0.10, audioCtx.currentTime + 3);
-
-  osc1 = audioCtx.createOscillator();
-  osc1.type = 'sine';
-  osc1.frequency.setValueAtTime(432, audioCtx.currentTime);
-
-  osc2 = audioCtx.createOscillator();
-  osc2.type = 'triangle';
-  osc2.frequency.setValueAtTime(216, audioCtx.currentTime);
-
-  osc1.connect(gainNode);
-  osc2.connect(gainNode);
-  gainNode.connect(audioCtx.destination);
-
-  osc1.start();
-  osc2.start();
-}
-
-function stopSoundscape() {
-  if (!gainNode || !audioCtx) return;
-
-  gainNode.gain.setValueAtTime(gainNode.gain.value, audioCtx.currentTime);
-  gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1.5);
-
-  setTimeout(() => {
-    if (osc1) { osc1.stop(); osc1.disconnect(); }
-    if (osc2) { osc2.stop(); osc2.disconnect(); }
-  }, 1600);
 }

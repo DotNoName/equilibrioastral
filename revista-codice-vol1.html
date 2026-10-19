@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revista Códice • Vol. I: La Rueda del Tiempo • Equilibrio Astral</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'wellness-bg': '#fbf9f5',
+            'wellness-surface': '#f4efe8',
+            'wellness-card': '#ffffff',
+            'sage-dark': '#485648',
+            'sage-accent': '#6c7e6c',
+            'sage-light': '#e8ede7',
+            'terracotta-accent': '#c27653',
+            'terracotta-light': '#f5eae4',
+            'text-dark': '#23201d',
+            'text-body': '#524c46',
+            'text-subtle': '#877f76',
+            'border-light': '#e6dfd5',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { background-color: #ffffff !important; color: #111111 !important; }
+      .page-break { page-break-before: always; }
+      .avoid-break { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body class="bg-wellness-bg text-text-dark font-sans selection:bg-sage-light selection:text-sage-dark antialiased">
+
+  <!-- Barra Superior de Navegación e Impresión -->
+  <header class="no-print sticky top-0 z-50 bg-wellness-bg/95 backdrop-blur-md border-b border-border-light py-4 px-6">
+    <div class="max-w-4xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="descarga.html" class="text-xs uppercase tracking-wider text-text-subtle hover:text-text-dark">
+          ← Volver a Descargas
+        </a>
+        <span class="text-border-light">|</span>
+        <span class="font-serif text-lg font-medium text-text-dark">Revista Códice • Vol. I</span>
+      </div>
+      <button onclick="window.print()" class="bg-sage-dark hover:bg-sage-accent text-white px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-colors shadow-sm flex items-center gap-2">
+        <span>🖨️ Guardar en PDF / Imprimir</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO DE LA REVISTA (FORMATO EDITORIAL) -->
+  <main class="max-w-3xl mx-auto px-6 py-12 sm:py-20">
+
+    <!-- PORTADA DE LA REVISTA -->
+    <section class="min-h-[85vh] flex flex-col justify-between py-12 border-b-2 border-border-light text-center page-break">
+      <div class="pt-6">
+        <div class="inline-block px-4 py-1 rounded-full bg-sage-light text-sage-dark text-[11px] font-semibold uppercase tracking-[0.2em] mb-6">
+          Volumen I • Edición Fundacional
+        </div>
+        <h1 class="font-serif text-6xl sm:text-7xl text-text-dark font-normal tracking-tight mb-2">
+          CÓDICE
+        </h1>
+        <p class="font-serif italic text-2xl sm:text-3xl text-terracotta-accent">
+          Cuadernos de Sabiduría Ancestral, Ciencia & Ritmo
+        </p>
+      </div>
+
+      <div class="my-10 p-10 rounded-[2.5rem] bg-gradient-to-b from-[#e8ede7]/60 via-[#f4efe8] to-[#eae3d9] border border-border-light max-w-lg mx-auto shadow-wellness-sm text-center">
+        <div class="w-20 h-20 rounded-full bg-wellness-surface border border-sage-accent/30 mx-auto flex items-center justify-center text-4xl mb-4 shadow-sm">
+          ☀️
+        </div>
+        <h2 class="font-serif text-2xl sm:text-3xl text-text-dark font-medium mb-3">
+          La Rueda del Tiempo Maya
+        </h2>
+        <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed">
+          Cómo las civilizaciones del Sol entendieron los ciclos cósmicos y su correspondencia con la biología, el descanso y la salud conductual del ser humano moderno.
+        </p>
+      </div>
+
+      <div class="border-t border-border-light pt-6 flex items-center justify-between text-xs text-text-subtle uppercase tracking-widest px-4">
+        <span>Publicación Digital</span>
+        <span>Equilibrio Astral</span>
+        <span>Año 2026</span>
+      </div>
+    </section>
+
+    <!-- CARTA EDITORIAL -->
+    <section class="py-12 border-b border-border-light page-break">
+      <span class="text-xs uppercase tracking-widest text-sage-dark font-semibold block mb-2">Carta de Apertura</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-text-dark font-medium mb-6">
+        Por qué el tiempo no es un reloj de oficina
+      </h2>
+      
+      <p class="font-serif text-xl sm:text-2xl text-text-dark italic leading-relaxed mb-6 font-light">
+        "Hemos cambiado la brújula del Sol y las estaciones por la campana digital de las notificaciones inmediatas. Y nuestro sistema nervioso está pagando el precio."
+      </p>
+
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed mb-4">
+        Para el pensamiento occidental moderno, el tiempo es una línea recta implacable: un vector que no se detiene, donde cada segundo que pasa se considera un recurso consumido y donde la pausa suele confundirse con la culpa. Vivimos apresurados tratando de "ganar tiempo", como si la vida fuera una carrera contra un cronómetro imaginario.
+      </p>
+
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed mb-4">
+        Sin embargo, las culturas mesoamericanas —desde los mayas de las tierras bajas de Petén hasta los sabios nahuas del altiplano central— concibieron el tiempo no como una flecha destructora, sino como una <strong>rueda armónica que respira</strong>. Un ciclo vivo donde cada día posee una frecuencia energética propia (un nahual o un tonalli) y donde cada fase del cosmos tiene un momento sagrado para sembrar, esperar, cosechar y descansar.
+      </p>
+
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed">
+        En este primer volumen de <em>Códice</em>, no te proponemos renunciar a la tecnología ni regresar a vivir en la selva. Te proponemos algo mucho más audaz: <strong>reclamar la soberanía sobre tus propios ritmos internos</strong>, utilizando la sabiduría arqueoastronómica como mapa poético y la neurobiología moderna como herramienta práctica de salud cotidiana.
+      </p>
+    </section>
+
+    <!-- ARTÍCULO 01: EL TZOLK'IN Y LA GESTACIÓN HUMANA -->
+    <section class="py-12 border-b border-border-light page-break">
+      <span class="text-xs uppercase tracking-widest text-terracotta-accent font-semibold block mb-2">Arqueoastronomía & Biología</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-text-dark font-medium mb-4">
+        El Tzolk'in de 260 Días: El Ritmo de la Vida Humana
+      </h2>
+
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed mb-6">
+        El calendario sagrado maya o Tzolk'in no sigue el año solar de 365 días ni el ciclo lunar de 29.5 días de forma aislada. Consta de <strong>260 días</strong>, producto de la combinación de 20 glifos de día y 13 tonos numéricos. ¿Por qué una civilización tan matemáticamente avanzada eligió un ciclo de 260 días?
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+        <div class="p-5 bg-wellness-surface rounded-2xl border border-border-light">
+          <span class="text-xs uppercase font-semibold text-sage-dark block mb-1">1. La Gestación Humana</span>
+          <p class="text-xs text-text-body leading-relaxed font-light">
+            260 días corresponden con asombrosa precisión a los 9 meses lunares (~37 semanas) que dura el desarrollo biológico de un embrión en el vientre materno.
+          </p>
+        </div>
+        <div class="p-5 bg-wellness-surface rounded-2xl border border-border-light">
+          <span class="text-xs uppercase font-semibold text-terracotta-accent block mb-1">2. La Siembra del Maíz</span>
+          <p class="text-xs text-text-body leading-relaxed font-light">
+            Es el tiempo exacto que transcurre entre la preparación de la milpa y la recolección del grano maduro en las altitudes tropicales de Mesoamérica.
+          </p>
+        </div>
+      </div>
+
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed">
+        El Tzolk'in era, por lo tanto, el calendario de lo que <em>crece y se engendra</em> dentro de nosotros. Cada uno de los 20 nahuales no es una predicción de bola de cristal, sino un arquetipo conductual: una invitación diaria a cultivar una cualidad psicológica particular: la firmeza (Ak'ab'al), la paciencia (Keme), la visión estratégica (Tz'i') o la intuición creativa (B'atz').
+      </p>
+    </section>
+
+    <!-- INFOGRAFÍA: LOS 4 RUMBOS COSMOLÓGICOS Y SU REGULACIÓN -->
+    <section class="py-12 border-b border-border-light page-break">
+      <span class="text-xs uppercase tracking-widest text-sage-dark font-semibold block mb-2">Cosmovisión Práctica</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-text-dark font-medium mb-6">
+        La Geometría de los Cuatro Rumbos (Los Bacabes)
+      </h2>
+
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed mb-6">
+        Para los antiguos mayas, el cosmos se sostenía sobre cuatro ceibas gigantescas situadas en los cuatro puntos cardinales, cada una asociada a un color, un elemento y un estado de ánimo:
+      </p>
+
+      <div class="space-y-4">
+        
+        <div class="p-6 bg-wellness-surface rounded-2xl border-l-4 border-l-[#c27653] border border-border-light">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-serif text-xl text-text-dark font-medium">Lak'in • El Este (Rojo / Chak)</h3>
+            <span class="text-xs uppercase tracking-wider text-terracotta-accent font-semibold">El Nacimiento del Sol</span>
+          </div>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed">
+            Representa el inicio, la luz fresca de la mañana y la iniciativa. <em>Aplicación somática:</em> Momento de fijar tus 3 prioridades del día bajo la luz solar natural, sin mirar pantallas.
+          </p>
+        </div>
+
+        <div class="p-6 bg-wellness-surface rounded-2xl border-l-4 border-l-[#23201d] border border-border-light">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-serif text-xl text-text-dark font-medium">Chik'in • El Oeste (Negro / Ek')</h3>
+            <span class="text-xs uppercase tracking-wider text-text-dark font-semibold">El Ocaso & El Reposo</span>
+          </div>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed">
+            El reino de la introspección y la transformación. Cuando el sol se oculta, las tareas activas cesan. <em>Aplicación somática:</em> Cierre consciente de la jornada laboral y atenuación lumínica ambiental.
+          </p>
+        </div>
+
+        <div class="p-6 bg-wellness-surface rounded-2xl border-l-4 border-l-[#e8ede7] border border-border-light">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-serif text-xl text-text-dark font-medium">Xaman • El Norte (Blanco / Sak)</h3>
+            <span class="text-xs uppercase tracking-wider text-sage-dark font-semibold">La Sabiduría Ancestral</span>
+          </div>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed">
+            El frío de las montañas y la claridad del juicio sin pasiones precipitadas. <em>Aplicación somática:</em> Ejercicios de respiración lenta y toma de decisiones pausadas.
+          </p>
+        </div>
+
+        <div class="p-6 bg-wellness-surface rounded-2xl border-l-4 border-l-[#d4b068] border border-border-light">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-serif text-xl text-text-dark font-medium">Nohol • El Sur (Amarillo / K'an)</h3>
+            <span class="text-xs uppercase tracking-wider text-amber-700 font-semibold">La Madurez & Los Frutos</span>
+          </div>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed">
+            La vitalidad del maíz dorado y la salud corporal plena. <em>Aplicación somática:</em> Cuidado de la digestión, alimentación no procesada y movimiento físico regular.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ARTÍCULO 02: NEUROBIOLOGÍA DE LA CALMA -->
+    <section class="py-12 border-b border-border-light page-break">
+      <span class="text-xs uppercase tracking-widest text-terracotta-accent font-semibold block mb-2">Neurociencia & Cronobiología</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-text-dark font-medium mb-4">
+        El Síndrome de Desincronización y el Eje HPA
+      </h2>
+
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed mb-4">
+        En las últimas tres décadas, la medicina del sueño y la endocrinología han descubierto que casi todas las células de nuestro cuerpo albergan pequeños relojes moleculares (genes <em>CLOCK</em> y <em>BMAL1</em>).
+      </p>
+
+      <p class="text-sm sm:text-base text-text-body font-light leading-relaxed mb-6">
+        Cuando pasamos el día entero bajo luz artificial blanca tenue en interiores y la noche expuestos a pantallas brillantes emisoras de luz azul (460 nm), creamos un estado crónico de <strong>falso mediodía permanente</strong>. El eje Hipotálamo-Hipófisis-Adrenal (HPA) interpreta esta anomalía como una crisis continua, elevando los niveles basales de cortisol y suprimiendo la variabilidad de la frecuencia cardíaca (HRV).
+      </p>
+
+      <div class="p-6 bg-sage-light/70 rounded-2xl border border-sage-accent/20 my-6">
+        <h4 class="font-serif text-xl text-sage-dark font-medium mb-2">La Solución Conductual: Resincronización en 3 Pasos</h4>
+        <ol class="text-xs sm:text-sm text-text-body space-y-2 list-decimal list-inside font-light">
+          <li><strong>Baño de luz a primera hora:</strong> 10 minutos de luz natural en el balcón o jardín al iniciar el día.</li>
+          <li><strong>Pausas de campo visual amplio:</strong> Desenfocar la vista de la pantalla cada 45 minutos y mirar a lo lejos (visión panorámica) para relajar los músculos ciliares y calmar la amígdala.</li>
+          <li><strong>Oscuridad circadiana nocturna:</strong> Eliminar pantallas 45 minutos antes de dormir para permitir el ascenso natural de melatonina.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- RITUAL PRÁCTICO GUIADO: EL AMANECER CONSCIENTE -->
+    <section class="py-12 border-b border-border-light page-break">
+      <span class="text-xs uppercase tracking-widest text-sage-dark font-semibold block mb-2">Práctica Guiada</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-text-dark font-medium mb-4">
+        El Ritual de los 7 Minutos del Alba
+      </h2>
+
+      <div class="p-8 rounded-3xl bg-wellness-surface border border-border-light space-y-6">
+        <div>
+          <span class="text-xs uppercase font-semibold text-terracotta-accent block mb-1">Minuto 0 a 2 • Despertar Somático</span>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed">
+            Antes de tocar el teléfono móvil, siéntate al borde de la cama. Apoya ambos pies firmemente en el piso. Realiza 3 rotaciones lentas de hombros y 2 suspiros fisiológicos (dos inhalaciones nasales, una exhalación bucal prolongada).
+          </p>
+        </div>
+
+        <div>
+          <span class="text-xs uppercase font-semibold text-terracotta-accent block mb-1">Minuto 3 a 5 • Hidratación Consciente</span>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed">
+            Bebe un vaso de agua fresca con una pizca diminuta de sal de roca. Siente el líquido descender por tu esófago, reconociendo que le estás devolviendo la fluidez a tu sangre tras horas de ayuno.
+          </p>
+        </div>
+
+        <div>
+          <span class="text-xs uppercase font-semibold text-terracotta-accent block mb-1">Minuto 6 a 7 • Saludo al Horizonte (Lak'in)</span>
+          <p class="text-xs sm:text-sm text-text-body font-light leading-relaxed">
+            Abre la ventana hacia el exterior. Deja que la luz de la mañana toque tus ojos y tu rostro. Enuncia interiormente una sola intención para el día: <em>"Hoy elijo responder con serenidad y claridad ante lo que no puedo controlar."</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRAPORTADA EDITORIAL & PRÓXIMO NÚMERO -->
+    <section class="py-16 text-center page-break">
+      <span class="text-xs uppercase tracking-[0.2em] text-sage-dark font-semibold block mb-3">
+        ✦ En el Próximo Número
+      </span>
+      <h3 class="font-serif text-3xl sm:text-4xl text-text-dark font-normal mb-3">
+        Códice Vol. II: La Medicina de los Elementos
+      </h3>
+      <p class="text-xs sm:text-sm text-text-body max-w-md mx-auto font-light leading-relaxed mb-8">
+        Exploraremos las plantas adaptógenas ancestrales, la psicología de la nutrición antiinflamatoria y el diseño de espacios domésticos para restaurar la calma mental.
+      </p>
+
+      <div class="inline-block p-6 rounded-2xl bg-wellness-surface border border-border-light max-w-sm text-xs text-text-subtle font-light">
+        <p class="font-serif text-base text-text-dark mb-1 font-medium">Equilibrio Astral • Revista Digital</p>
+        <p>© 2026 equilibrioastral.com</p>
+        <p class="mt-2 text-[10px] uppercase tracking-wider text-sage-dark font-semibold">Diseño & Contenido de Bienestar Sin Pseudociencia</p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
