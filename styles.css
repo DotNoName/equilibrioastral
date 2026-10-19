@@ -158,3 +158,38 @@ body {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+
+/* ==========================================================================
+   Ajustes de Integración PayPal Hosted Buttons
+   ========================================================================== */
+div[id^="paypal-container-"] {
+  width: 100% !important;
+  max-width: 340px !important;
+  margin: 0.75rem auto !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+div[id^="paypal-container-"] * {
+  white-space: normal !important;
+  word-break: normal !important;
+  letter-spacing: normal !important;
+}
+
+div[id^="paypal-container-"] > div {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 auto !important;
+}
+
+/* Ocultar el texto de título y precio repetido que inyecta el widget de PayPal */
+div[id^="paypal-container-"] > div > *:not([class*="paypal-buttons"]):not(iframe) {
+  display: none !important;
+}
+
+div[id^="paypal-container-"] iframe {
+  width: 100% !important;
+  min-width: 250px !important;
+}
+
