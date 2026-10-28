@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Diario de los 4 Rumbos • Plantilla Imprimible de Hábitos</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'wellness-bg': '#fbf9f5',
+            'wellness-surface': '#ffffff',
+            'wellness-card': '#f4efe8',
+            'sage-dark': '#485648',
+            'sage-accent': '#6c7e6c',
+            'sage-light': '#e8ede7',
+            'terracotta-accent': '#c27653',
+            'terracotta-light': '#f5eae4',
+            'text-dark': '#23201d',
+            'text-body': '#524c46',
+            'text-subtle': '#877f76',
+            'border-light': '#e6dfd5',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { background: #ffffff !important; color: #111111 !important; }
+      @page { margin: 1.2cm; size: letter portrait; }
+    }
+  </style>
+</head>
+<body class="bg-wellness-bg text-text-dark font-sans selection:bg-sage-light antialiased p-6 sm:p-10 min-h-screen flex flex-col justify-between">
+
+  <!-- Barra Superior de Acción (No se imprime) -->
+  <div class="no-print max-w-3xl mx-auto w-full mb-8 flex items-center justify-between bg-wellness-surface p-4 rounded-2xl border border-border-light shadow-sm">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="text-xs uppercase tracking-wider text-text-subtle hover:text-text-dark">
+        ← Volver a Equilibrio Astral
+      </a>
+      <span class="text-border-light">|</span>
+      <span class="text-xs font-semibold text-sage-dark uppercase tracking-wider">Recurso Gratuito de Bienvenida</span>
+    </div>
+    <button onclick="window.print()" class="bg-sage-dark hover:bg-sage-accent text-white px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-colors shadow-sm flex items-center gap-2">
+      <span>🖨️ Imprimir / Guardar en PDF</span>
+    </button>
+  </div>
+
+  <!-- HOJA DE TRABAJO IMPRIMIBLE (1 PÁGINA) -->
+  <main class="max-w-3xl mx-auto w-full bg-wellness-surface border border-border-light rounded-[2rem] p-8 sm:p-12 shadow-sm">
+    
+    <!-- Encabezado de la Ficha -->
+    <header class="border-b border-border-light pb-6 mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-sage-dark font-semibold mb-1">
+          <span>🌿 Equilibrio Astral</span>
+          <span>•</span>
+          <span>Registro Circadiano</span>
+        </div>
+        <h1 class="font-serif text-3xl sm:text-4xl text-text-dark font-normal">
+          El Diario de los 4 Rumbos
+        </h1>
+        <p class="text-xs text-text-subtle mt-0.5">
+          Plantilla diaria de alineación biológica y micro-hábitos conscientes.
+        </p>
+      </div>
+
+      <div class="border border-border-light rounded-xl p-3 text-xs bg-wellness-bg w-full sm:w-auto">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-text-subtle">Fecha:</span>
+          <span class="border-b border-dotted border-text-subtle w-32 inline-block"></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-text-subtle">Nahual del día:</span>
+          <span class="border-b border-dotted border-text-subtle w-24 inline-block"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Los 4 Cuadrantes de los Rumbos -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+      <!-- Cuadrante 1: ESTE (Amanecer / Inicio) -->
+      <div class="border border-terracotta-accent/30 rounded-2xl p-5 bg-[#fbf6f3]">
+        <div class="flex items-center justify-between mb-3 pb-2 border-b border-terracotta-accent/20">
+          <div>
+            <span class="text-[10px] uppercase font-bold tracking-wider text-terracotta-accent block">Lak'in • El Este</span>
+            <h2 class="font-serif text-xl text-text-dark font-medium">Amanecer & Luz</h2>
+          </div>
+          <span class="text-xl">☀️</span>
+        </div>
+        <ul class="text-xs text-text-body space-y-2.5 mb-4">
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-terracotta-accent border-border-light">
+            <span>10 min de luz natural matutina</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-terracotta-accent border-border-light">
+            <span>Vaso de agua con sales minerales</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-terracotta-accent border-border-light">
+            <span>2 suspiros fisiológicos al despertar</span>
+          </li>
+        </ul>
+        <div class="border-t border-terracotta-accent/20 pt-2">
+          <span class="text-[10px] uppercase font-semibold text-text-subtle block mb-1">Intención del día:</span>
+          <div class="border-b border-dotted border-text-subtle h-6"></div>
+        </div>
+      </div>
+
+      <!-- Cuadrante 2: NORTE (Claridad / Mente) -->
+      <div class="border border-border-light rounded-2xl p-5 bg-wellness-bg">
+        <div class="flex items-center justify-between mb-3 pb-2 border-b border-border-light">
+          <div>
+            <span class="text-[10px] uppercase font-bold tracking-wider text-sage-dark block">Xaman • El Norte</span>
+            <h2 class="font-serif text-xl text-text-dark font-medium">Foco & Sabiduría</h2>
+          </div>
+          <span class="text-xl">❄️</span>
+        </div>
+        <ul class="text-xs text-text-body space-y-2.5 mb-4">
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-sage-dark border-border-light">
+            <span>Micro-pausa de horizonte (mirar lejos a 6m)</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-sage-dark border-border-light">
+            <span>1 respiración cuadrada de 3 min</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-sage-dark border-border-light">
+            <span>90 min de trabajo profundo sin distracción</span>
+          </li>
+        </ul>
+        <div class="border-t border-border-light pt-2">
+          <span class="text-[10px] uppercase font-semibold text-text-subtle block mb-1">Mi única prioridad de hoy:</span>
+          <div class="border-b border-dotted border-text-subtle h-6"></div>
+        </div>
+      </div>
+
+      <!-- Cuadrante 3: SUR (Cuerpo / Vitalidad) -->
+      <div class="border border-border-light rounded-2xl p-5 bg-wellness-bg">
+        <div class="flex items-center justify-between mb-3 pb-2 border-b border-border-light">
+          <div>
+            <span class="text-[10px] uppercase font-bold tracking-wider text-amber-700 block">Nohol • El Sur</span>
+            <h2 class="font-serif text-xl text-text-dark font-medium">Cuerpo & Raíz</h2>
+          </div>
+          <span class="text-xl">🌱</span>
+        </div>
+        <ul class="text-xs text-text-body space-y-2.5 mb-4">
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-amber-700 border-border-light">
+            <span>20 min de caminata o estiramiento</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-amber-700 border-border-light">
+            <span>Comida sin pantallas y masticada con calma</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-amber-700 border-border-light">
+            <span>Pies descalzos sobre el suelo o pasto</span>
+          </li>
+        </ul>
+        <div class="border-t border-border-light pt-2">
+          <span class="text-[10px] uppercase font-semibold text-text-subtle block mb-1">Sensación corporal dominante:</span>
+          <div class="border-b border-dotted border-text-subtle h-6"></div>
+        </div>
+      </div>
+
+      <!-- Cuadrante 4: OESTE (Ocaso / Descanso) -->
+      <div class="border border-border-light rounded-2xl p-5 bg-[#f4f2f0]">
+        <div class="flex items-center justify-between mb-3 pb-2 border-b border-border-light">
+          <div>
+            <span class="text-[10px] uppercase font-bold tracking-wider text-text-dark block">Chik'in • El Oeste</span>
+            <h2 class="font-serif text-xl text-text-dark font-medium">Ocaso & Sueño</h2>
+          </div>
+          <span class="text-xl">🌙</span>
+        </div>
+        <ul class="text-xs text-text-body space-y-2.5 mb-4">
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-text-dark border-border-light">
+            <span>Luces bajas y cálidas desde las 8:30 pm</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-text-dark border-border-light">
+            <span>Pantallas apagadas 45 min antes de dormir</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <input type="checkbox" class="w-4 h-4 rounded text-text-dark border-border-light">
+            <span>Respiración 4-7-8 antes de cerrar los ojos</span>
+          </li>
+        </ul>
+        <div class="border-t border-border-light pt-2">
+          <span class="text-[10px] uppercase font-semibold text-text-subtle block mb-1">¿Qué agradezco hoy?:</span>
+          <div class="border-b border-dotted border-text-subtle h-6"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pie de la Ficha -->
+    <footer class="mt-8 pt-6 border-t border-border-light flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-text-subtle">
+      <div>
+        <span>Equilibrio Astral • Guía Práctica de Hábitos Diarios</span>
+      </div>
+      <div>
+        <span>equilibrioastral.com</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <div class="no-print text-center text-xs text-text-subtle py-4">
+    Tip: Presiona <kbd class="px-1.5 py-0.5 bg-wellness-surface border border-border-light rounded font-mono">Ctrl + P</kbd> para imprimir o guardar como PDF.
+  </div>
+
+</body>
+</html>

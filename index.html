@@ -569,17 +569,17 @@
               <li class="flex items-center gap-2">✓ Incluye el Ritual de los 7 Minutos del Alba</li>
             </ul>
           </div>
-          <div class="flex flex-col items-center pt-4 border-t border-border-light">
-            <div class="w-full max-w-[280px]">
-              <div id="paypal-container-ZMQU6XYADPS6A" class="w-full min-h-[44px]"></div>
+          <div class="flex flex-col sm:flex-row items-center gap-4 pt-4 border-t border-border-light">
+            <div class="w-full sm:flex-1">
+              <div id="paypal-container-ZMQU6XYADPS6A" class="w-full max-w-[280px] mx-auto min-h-[44px]"></div>
               <script>
                 paypal.HostedButtons({
                   hostedButtonId: "ZMQU6XYADPS6A",
                 }).render("#paypal-container-ZMQU6XYADPS6A");
               </script>
             </div>
-            <a href="https://www.paypal.com/ncp/payment/ZMQU6XYADPS6A" target="_blank" class="text-[11px] text-text-subtle hover:text-sage-dark underline mt-1.5 block">
-              Pagar $7.99 directamente en PayPal ➔
+            <a href="#oferta" class="w-full sm:w-auto btn-wellness-secondary px-5 py-3 text-xs uppercase tracking-wider font-semibold text-center whitespace-nowrap">
+              Ver Pack 2x1 ($10 USD)
             </a>
           </div>
         </div>
@@ -605,17 +605,17 @@
               <li class="flex items-center gap-2">✓ Protocolos de emergencia y de higiene circadiana</li>
             </ul>
           </div>
-          <div class="flex flex-col items-center pt-4 border-t border-border-light">
-            <div class="w-full max-w-[280px]">
-              <div id="paypal-container-DW6MQXD4DX3N8" class="w-full min-h-[44px]"></div>
+          <div class="flex flex-col sm:flex-row items-center gap-4 pt-4 border-t border-border-light">
+            <div class="w-full sm:flex-1">
+              <div id="paypal-container-DW6MQXD4DX3N8" class="w-full max-w-[280px] mx-auto min-h-[44px]"></div>
               <script>
                 paypal.HostedButtons({
                   hostedButtonId: "DW6MQXD4DX3N8",
                 }).render("#paypal-container-DW6MQXD4DX3N8");
               </script>
             </div>
-            <a href="https://www.paypal.com/ncp/payment/DW6MQXD4DX3N8" target="_blank" class="text-[11px] text-text-subtle hover:text-sage-dark underline mt-1.5 block">
-              Pagar $7.99 directamente en PayPal ➔
+            <a href="#oferta" class="w-full sm:w-auto btn-wellness-secondary px-5 py-3 text-xs uppercase tracking-wider font-semibold text-center whitespace-nowrap">
+              Ver Pack 2x1 ($10 USD)
             </a>
           </div>
         </div>
@@ -667,10 +667,10 @@
           🌿
         </div>
         <h3 class="font-serif text-3xl text-text-dark font-normal mb-2">
-          Tu Ficha de Hábitos & Perfil
+          Acceso a tu Ficha Digital
         </h3>
         <p class="text-xs text-text-body mb-6 font-light leading-relaxed">
-          Ingresa tus datos para registrar tu perfil de ritmos ancestrales y descargar tu ficha personalizada en PDF.
+          Ingresa tus datos para recibir tu reporte de hábitos conductuales y la primera edición de la revista <em>Códice</em>.
         </p>
 
         <form id="lead-magnet-form" class="space-y-4 text-left">
@@ -685,7 +685,7 @@
           </div>
 
           <button type="submit" class="w-full btn-wellness-primary py-3.5 text-xs uppercase tracking-widest font-semibold mt-2">
-            Confirmar & Generar Mi Ficha
+            Confirmar & Recibir Descarga
           </button>
         </form>
       </div>
@@ -694,33 +694,36 @@
         <div class="w-14 h-14 rounded-full bg-sage-light text-sage-dark mx-auto flex items-center justify-center text-2xl mb-4">
           ✓
         </div>
-        <h3 class="font-serif text-3xl text-text-dark mb-2">¡Tu Ficha está Lista!</h3>
+        <h3 class="font-serif text-3xl text-text-dark mb-2">¡Acceso Concedido!</h3>
         <p class="text-xs text-text-body leading-relaxed mb-6 font-light">
-          Hola <strong id="user-confirmed-name" class="text-text-dark font-medium">amigo</strong>, tu reporte ha quedado registrado. Ya puedes imprimirlo o guardarlo en tu equipo:
+          Hola <strong id="user-confirmed-name" class="text-text-dark font-medium">amigo</strong>, hemos registrado tu perfil para <strong id="user-confirmed-email" class="text-sage-dark"></strong>. Aquí tienes tus recursos gratuitos listos para descargar:
         </p>
 
-        <!-- Botón de Descarga Gratuita -->
+        <!-- Botones de Entrega de Recursos GRATUITOS -->
         <div class="space-y-3 mb-6 text-left">
-          <button onclick="window.print()" class="w-full btn-wellness-secondary py-3.5 px-5 text-xs uppercase tracking-wider font-semibold flex items-center justify-between">
+          <a href="diario-4-rumbos.html" target="_blank" class="w-full btn-wellness-primary py-3.5 px-5 text-xs uppercase tracking-wider font-semibold flex items-center justify-between shadow-sm">
+            <span>🌿 Descargar El Diario de los 4 Rumbos (PDF)</span>
+            <span>➔</span>
+          </a>
+          <button onclick="window.print()" class="w-full btn-wellness-secondary py-3 px-5 text-xs uppercase tracking-wider font-semibold flex items-center justify-between">
             <span>🖨️ Guardar Mi Ficha de Perfil en PDF</span>
-            <span>PDF Gratis</span>
+            <span>PDF</span>
           </button>
         </div>
 
-        <!-- Upsell Promocional hacia el Pack de $10 -->
-        <div class="p-5 rounded-2xl bg-terracotta-light/60 border border-terracotta-accent/30 text-left mb-6">
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="text-xs">🔥</span>
-            <span class="text-[11px] uppercase tracking-wider font-semibold text-terracotta-accent">Oferta de Lanzamiento</span>
-          </div>
+        <!-- Banner de Venta hacia los Productos de Pago -->
+        <div class="p-4 rounded-2xl bg-gradient-to-br from-[#f5eae4] to-[#fbf9f5] border border-terracotta-accent/30 text-left mb-6">
+          <span class="text-[10px] uppercase font-bold tracking-wider text-terracotta-accent block mb-1">
+            ✦ Oferta Exclusiva de Lanzamiento
+          </span>
           <h4 class="font-serif text-lg text-text-dark font-medium mb-1">
-            Pack Fundacional: Revista Códice + Manual Somático
+            Profundiza con la Revista Códice + Manual Somático
           </h4>
-          <p class="text-[11px] text-text-body font-light leading-relaxed mb-3">
-            Lleva tu bienestar al siguiente nivel con la revista completa y los 15 protocolos somáticos por solo <strong>$10.00 USD</strong>.
+          <p class="text-[11px] text-text-body font-light mb-3 leading-relaxed">
+            Desbloquea la edición completa de la Revista Códice (Vol. I) y los 15 protocolos del Manual por solo $10.00 USD (Ahorras 37%).
           </p>
-          <a href="#oferta" onclick="closeLeadModal()" class="w-full btn-wellness-primary py-2.5 px-4 text-xs uppercase tracking-wider font-semibold text-center block">
-            Ver Oferta del Pack ($10 USD) ➔
+          <a href="#oferta" onclick="closeLeadModal()" class="w-full block text-center bg-terracotta-accent hover:bg-[#aa6342] text-white py-2.5 px-4 rounded-full text-xs font-semibold uppercase tracking-wider transition-colors shadow-sm">
+            🔥 Desbloquear Todo por $10 USD
           </a>
         </div>
 
